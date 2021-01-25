@@ -9,7 +9,7 @@ class Page extends React.Component{
 		return(
 			<div>
 				<div>
-					console.log('Hola Mundo')
+					
 				</div>
 				<Header />
 				<Banner />

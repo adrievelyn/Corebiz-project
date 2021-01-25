@@ -1,0 +1,60 @@
+.footer{
+	background-color: black;
+	height: 150px;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 10px;
+	width: 100%;
+}
+.footer_localization{
+	color: white;
+}
+.footer_localization h4{
+	letter-spacing: bold;
+
+}
+.footer_localization p{
+	font-size: 5px;
+}
+.footer__contact{
+	display: inline-flex;
+	flex-direction: column;
+	font-size: 7px;
+}
+.footer__contact--ContactUs, .footer__contact--Consultor {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	width: 80px;
+	height: 15px;
+	border-radius: 2px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5px;
+} 
+.footer__contact--ContactUs{
+	margin-top: 20px;
+	justify-content: space-around;
+}
+.footer__contact--Consultor{
+	margin-top: 10px;
+}
+.footer__contact--ContactUs a, .footer__contact--Consultor a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+
+}
+.footer__contact--ContactUs a:hover, .footer__contact--Consultor a:hover{
+	text-decoration: underline;
+}
+.footer__contact--ContactUs img, .footer__contact--Consultor img{
+	width: 10px;
+	height: 10px;
+	padding-top: 5px;
+	margin-left: 5px;
+}
+
+
+
