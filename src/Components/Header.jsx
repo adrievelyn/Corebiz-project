@@ -16,6 +16,7 @@ class Header extends React.Component{
 				src={Logo} />
 			</div>
 			<div class="main">
+			
     			 <input class="input" type="text" placeholder="O que está procurando?"></input>
     			 <img className='main__search' alt='Buscador'
 				src={Searching} width = '10' height='10'/>
