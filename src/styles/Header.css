@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: black;
+}
+
+.Header{
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+
+}
+.Header__img--logo {
+	margin: 10px;
+	margin-left: 150px;
+	width: 150px;
+}
+.main__title{
+	font-size: 10px;
+	color: rgba(0, 0, 0, 0.3);
+	margin-left: 70px;
+}
+.input{
+	font-size: 20px;
+	margin-left: 70px;
+	width: 200px
+}
+/*::placeholder{
+	text-decoration: none;
+};*/
