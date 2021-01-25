@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route} from "react-router-dom";
-import Header from "./Components/Header";
+import Page from "./Page/Page";
+/*import Header from "./Components/Header";
+import Banner from "./Components/Banner";*/
 /*import Badges from "./pages/Badges";
 
 /*  
@@ -14,7 +16,7 @@ import Header from "./Components/Header";
               <SingleOrder />
             </Route>*/
 
-/**/
+/* */
 
 function App() {
   return (
@@ -22,8 +24,10 @@ function App() {
       <BrowserRouter>
           <Switch>
            <Route exact path="/">
-              <Header />
+              <Page />
             </Route>
+           
+           
           </Switch>
       </BrowserRouter>
 

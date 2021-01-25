@@ -16,17 +16,21 @@ class Header extends React.Component{
 				src={Logo} />
 			</div>
 			<div class="main">
-   				 <h2 class="main__title">O que está procurando?</h2>
-    			 <input class="input" type="text" placeholder=""></input>
+    			 <input class="input" type="text" placeholder="O que está procurando?"></input>
     			 <img className='main__search' alt='Buscador'
-				src={Searching} />
-				<img className='main__account' alt='TuCuenta'
+				src={Searching} width = '10' height='10'/>
+				<div className='main__account'>
+				<img className='main__account--login' alt='TuCuenta'
 				src={Account} />
-				<img className='main__account' alt='Carrito'
+				<h6 className='main__account--name'>Adriana Sánchez</h6>
+				</div>
+				<img className='main__shopping' alt='Carrito'
 				src={Shopping} />
 
 			</div>
+				
 		</div>
+
 		)
 	};
 }

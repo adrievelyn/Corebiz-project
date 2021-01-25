@@ -11,20 +11,48 @@ body{
 
 }
 .Header__img--logo {
-	margin: 10px;
-	margin-left: 150px;
+	margin-top: 10px;
+	margin-left: 70px;
 	width: 150px;
 }
-.main__title{
+
+.input{
 	font-size: 10px;
 	color: rgba(0, 0, 0, 0.3);
-	margin-left: 70px;
+	width: 400px;
+	height: 20px;
+	margin-top: 10PX;
+	border-top-color: rgba(255, 255, 255, 0);
+	border-left-color: rgba(255, 255, 255, 0);
+	border-right-color: rgba(255, 255, 255, 0);
+
+	
 }
-.input{
-	font-size: 20px;
-	margin-left: 70px;
-	width: 200px
+::placeholder{
+	border-bottom-color: black;
+};
+
+.main__search img{
+	margin-left: 10px;
 }
-/*::placeholder{
-	text-decoration: none;
-};*/
+.main__account{
+	margin-left: 20px;
+	display: inline-flex;
+}
+.main__account--login{
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+}
+.main__account--name{
+	margin-top: 1px;
+}
+.main__shopping{
+	margin-left: 20px;
+	width: 15px;
+	height: 15px;
+}
+h6{
+	font-size: 7px;
+	color: rgba(0, 0, 0, 0.3);
+}
