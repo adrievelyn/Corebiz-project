@@ -7,25 +7,32 @@
 		/*overflow: scroll;*/
 		padding: 30px;
 		position: relative;
+		height: 200px;
 		
 	}
 	.carousel__container{
 		white-space: nowrap;	
-		margin: 70px 0px;
-		padding-bottom: 10px;
+		
+		
+	}
+	.carousel__container--sell{
+		font-size: 5px;
+		
 	}
 	.carousel-item{
 		display: inline-block;
-		background: yellow;
-		width: 150px;
-		height: 200px;
-		border-radius: 20px;
+		background: white;
+		width: 80px;
+		height: 150px;
+		border: 1px solid black;
 		overflow: hidden;
 		margin-right: 10px;
+		margin-top: 15px;
 		cursor: pointer;
 		transition: 450ms all;
 		transform-origin: center left;
 		position: relative;
+
 
 	}
 	.carousel-item:hover ~ .carousel-item {

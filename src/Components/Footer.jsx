@@ -29,9 +29,14 @@ class Footer extends React.Component{
 		</div>
 		</div>
 		<div className='footer__company'>
+			<div class='footer__company--created'>
+			<p>Created by</p>
 			<img className='Created' alt='CreatedByCorebiz' src={Created} />
+			</div>
+			<div class='footer__company--powered'>
+			<p>Powered by</p>
 			<img className='Vtex' alt='Vtex' src={Vtex} />
-			
+			</div>
 		</div>
 	</footer>
 		)

@@ -1,6 +1,6 @@
 .footer{
 	background-color: black;
-	height: 150px;
+	height: 300px;
 	display: inline-flex;
 	justify-content: space-around;
 	font-size: 10px;
@@ -55,6 +55,25 @@
 	padding-top: 5px;
 	margin-left: 5px;
 }
-
-
-
+.footer__company{
+	justify-content: space-around;
+	margin-top: 25px;
+	display: flex;
+}
+.Created{
+	width: 30px;
+}
+.Vtex{
+	width: 30px;
+}
+p{
+	color: white;
+	font-size: 5px;
+}
+.footer__company--created{
+	display: flex;
+	flex-direction: column
+}
+.footer__company--powered{
+	margin-left: 10px;
+}

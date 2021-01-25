@@ -12,7 +12,7 @@ class Content extends React.Component{
 				<h3>Mais Vendidos</h3>
 				</div>
 				<div class='carousel-item'>
-				<img class='carousel-item__img' src="" alt=""></img>
+				<img class='carousel-item__img' src="./Statics/blackShoe.png" alt="Shoes" width='80' height='150'></img>
 				<div class='carousel-item__details'>
 					<div>
 					<img src=""/>
