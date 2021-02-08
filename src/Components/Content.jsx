@@ -1,78 +1,48 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ContainerCss from '../styles/Container.css'
+import {Controller, Scene} from 'react-scrollmagic'
+import { animateScroll as scroll} from 'react-scroll'
 
 
-class Content extends React.Component{
-	render(){
-		return(
-
-			<section class='carousel'>
-			<div class='carousel__container'>
-				<div className='carousel__container--sell'>
-				<h3>Mais Vendidos</h3>
-				</div>
-				<div class='carousel-item'>
-				<img class='carousel-item__img' src="./Statics/blackShoe.png" alt="Shoes" width='80' height='150'></img>
-				<div class='carousel-item__details'>
-					<div>
-					<img src=""/>
-					<img src=""/>
-					</div>
-				</div>
-				<p class='carousel-item__details--title'></p>
-				<p class='carousel-item__details--subtitle'></p>
-				<img class='carousel-item__img' src="" alt=""></img>
-				<div class='carousel-item__details'>
-					<div>
-					<img src=""/>
-					<img src=""/>
-					</div>
-				</div>
-				<p class='carousel-item__details--title'></p>
-				<p class='carousel-item__details--subtitle'></p>
-				<img class='carousel-item__img' src="" alt=""></img>
-				<div class='carousel-item__details'>
-					<div>
-					<img src=""/>
-					<img src=""/>
-					</div>
-				</div>
-				<p class='carousel-item__details--title'></p>
-				<p class='carousel-item__details--subtitle'></p>
-				<img class='carousel-item__img' src="" alt=""></img>
-				<div class='carousel-item__details'>
-					<div>
-					<img src=""/>
-					<img src=""/>
-					</div>
-				</div>
-				<p class='carousel-item__details--title'></p>
-				<p class='carousel-item__details--subtitle'></p>
-				<img class='carousel-item__img' src="" alt=""></img>
-				<div class='carousel-item__details'>
-					<div>
-					<img src=""/>
-					<img src=""/>
-					</div>
-				</div>
-				<p class='carousel-item__details--title'></p>
-				<p class='carousel-item__details--subtitle'></p>
-				<img class='carousel-item__img' src="" alt=""></img>
-				<div class='carousel-item__details'>
-					<div>
-					<img src=""/>
-					<img src=""/>
-					</div>
-				</div>
-				<p class='carousel-item__details--title'></p>
-				<p class='carousel-item__details--subtitle'></p>
-				
-			</div>
-		</div>
-	</section>
-		)
+function Content(){
+	const url = 'https://5d8cdb5a443e3400143b4bea.mockapi.io/corebizchile/products'
+	const [todos, setTodos] = useState()
+	const fetchApi = async () => {
+		const response = await fetch(url)
+		/*console.log(response.status)*/
+		const responseJSON = await response.json()
+		setTodos(responseJSON)
+		/*console.log(responseJSON)*/
 	}
+	useEffect(() => {
+		fetchApi()
+	}, [] )
+	return(
+		<div className='Content'>
+		<p>Máis Vendidos</p>
+				<ul>
+				{ !todos ? 'Cargando... ' : 
+				todos.map( (todo, index) =>{
+					return <div class='carousel-item'>
+		        <img class='carousel-item__img' src={todo.img} alt="/"></img>
+		        <div class='carousel-item__details'>
+		          <div>
+		          <li>{todo.product}</li>
+		          </div>
+		          <div>
+		          <li className='carousel-item__cost'><p>por R$</p> {todo.price}</li>
+		          </div>
+		          </div>
+		          </div>
+				})
+				}
+				</ul>
+		
+	</div>
+		)
 }
+
+
 
 
 export default Content;

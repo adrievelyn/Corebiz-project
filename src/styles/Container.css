@@ -21,9 +21,9 @@
 		
 	}
 	.carousel-item{
-		display: inline-block;
+		display: inline-flex;
 		background: white;
-		width: 80px;
+		width: 200px;
 		height: 150px;
 		border: 1px solid black;
 		overflow: hidden;
@@ -48,7 +48,7 @@
 	}
 	.carousel-item__img{
 		width: 200px;
-		height: 250px;
+		height: 150px;
 		object-fit: cover;
 	}
 	.carousel-item__details {
@@ -62,4 +62,13 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
+		padding-top: 110px;
+		color: white;
+	}
+	.carousel-item__cost{
+		display: inline-flex;	
+	}
+	.carousel-item__cost p{
+		font-size: 8px;
+		padding-right: 6px;
 	}
