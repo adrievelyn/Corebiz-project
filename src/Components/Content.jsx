@@ -24,13 +24,19 @@ function Content(){
 				{ !todos ? 'Cargando... ' : 
 				todos.map( (todo, index) =>{
 					return <div class='carousel-item'>
-		        <img class='carousel-item__img' src={todo.img} alt="/"></img>
+		        <img class='carousel-item__img' key='index' src={todo.img} alt="/"></img>
 		        <div class='carousel-item__details'>
+		          <div className='carousel-item__title'>
 		          <div>
 		          <li>{todo.product}</li>
 		          </div>
+		          <div className='carousel-item__cost'>
+		          <li><p>por R$</p></li>
+		          <li>{todo.price}</li>
+		          </div>
 		          <div>
-		          <li className='carousel-item__cost'><p>por R$</p> {todo.price}</li>
+		          <button>COMPRAR</button>
+		          </div>
 		          </div>
 		          </div>
 		          </div>

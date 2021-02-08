@@ -23,8 +23,8 @@
 	.carousel-item{
 		display: inline-flex;
 		background: white;
-		width: 200px;
-		height: 150px;
+		width: 180px;
+		height: 200px;
 		border: 1px solid black;
 		overflow: hidden;
 		margin-right: 10px;
@@ -33,7 +33,6 @@
 		transition: 450ms all;
 		transform-origin: center left;
 		position: relative;
-
 
 	}
 	.carousel-item:hover ~ .carousel-item {
@@ -50,25 +49,44 @@
 		width: 200px;
 		height: 150px;
 		object-fit: cover;
+
 	}
 	.carousel-item__details {
 		/*background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100% );*/
 		font-size: 10px;
 		opacity: 1;
 		transition: 450ms opacity;
-		padding: 10px;
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding-top: 110px;
+		padding-top: 120px;
 		color: white;
+
+
+	}
+	.carousel-item__title{
+		background-color: lightgrey;
+		width: 180px;
+		height: 80px;
+		color: darkgrey;
+		text-align-last: center;
+		
 	}
 	.carousel-item__cost{
-		display: inline-flex;	
+		display: inline-flex;
+		align-items: center;
+		color: black;	
+		padding-top: 1px;
+		list-style: none;
 	}
-	.carousel-item__cost p{
-		font-size: 8px;
-		padding-right: 6px;
+	.carousel-item__cost li p, .carousel-item__cost li{
+		font-size: 10px;
+		color: black;
+
 	}
+	.carousel-item__cost li {
+		padding-left: 5px;
+	}
+	
