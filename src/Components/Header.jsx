@@ -4,11 +4,13 @@ import Logo from '../Statics/statics_logo.png'
 import Searching from '../Statics/statics_search.png'
 import Account from '../Statics/statics_account.png'
 import Shopping from '../Statics/statics_shopping-cart.png'
-
+import Count from './Count'
 
 
 class Header extends React.Component{
+
 	render(){
+		
 		return (
 		<div  className='Header'>
 			<div  className='Header__img'>
@@ -24,10 +26,10 @@ class Header extends React.Component{
 				<img className='main__account--login' alt='TuCuenta'
 				src={Account} />
 				<h6 className='main__account--name'>Adriana Sánchez</h6>
-				</div>
-				<img className='main__shopping' alt='Carrito'
-				src={Shopping} />
-
+				
+				<img className='main__shopping' alt='Carrito' src={Shopping} />
+				<Count />
+</div>
 			</div>
 				
 		</div>

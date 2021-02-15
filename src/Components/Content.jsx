@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import ContainerCss from '../styles/Container.css'
 import {Controller, Scene} from 'react-scrollmagic'
 import { animateScroll as scroll} from 'react-scroll'
-
+import Buying from './Buying'
 
 function Content(){
 	const url = 'https://5d8cdb5a443e3400143b4bea.mockapi.io/corebizchile/products'
@@ -17,14 +17,14 @@ function Content(){
 	useEffect(() => {
 		fetchApi()
 	}, [] )
-	return(
-		<div className='Content'>
+	
+	return <div className='Content'>
 		<p>Máis Vendidos</p>
 				<ul>
 				{ !todos ? 'Cargando... ' : 
 				todos.map( (todo, index) =>{
 					return <div class='carousel-item'>
-		        <img class='carousel-item__img' key='index' src={todo.img} alt="/"></img>
+		        <img class='carousel-item__img' src={todo.img} alt="/" ></img>
 		        <div class='carousel-item__details'>
 		          <div className='carousel-item__title'>
 		          <div>
@@ -35,7 +35,8 @@ function Content(){
 		          <li>{todo.price}</li>
 		          </div>
 		          <div>
-		          <button>COMPRAR</button>
+		          <Buying />
+		         /*<button type='button'>Comprar</button>*/
 		          </div>
 		          </div>
 		          </div>
@@ -45,7 +46,7 @@ function Content(){
 				</ul>
 		
 	</div>
-		)
+		
 }
 
 

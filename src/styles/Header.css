@@ -52,8 +52,12 @@ body{
 	margin-left: 20px;
 	width: 15px;
 	height: 15px;
+	display: flex;
 }
 h6{
 	font-size: 7px;
 	color: rgba(0, 0, 0, 0.3);
+}
+.count{
+	display: inline-flex;
 }
